@@ -18,6 +18,8 @@ package org.springframework.samples.petclinic.owner;
 import org.springframework.samples.petclinic.model.NamedEntity;
 
 import jakarta.persistence.Entity;
+
+import java.io.Serial;
 import jakarta.persistence.Table;
 
 /**
@@ -27,6 +29,7 @@ import jakarta.persistence.Table;
 @Table(name = "types")
 public class PetType extends NamedEntity {
 
+	@Serial
 	private static final long serialVersionUID = -7611995145056548231L;
 
 }
