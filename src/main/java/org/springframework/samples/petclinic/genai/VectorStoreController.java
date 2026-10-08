@@ -75,9 +75,9 @@ public class VectorStoreController {
 		// add the documents to the vector store
 		this.vectorStore.add(documents);
 
-		if (vectorStore instanceof SimpleVectorStore) {
+		if (vectorStore instanceof SimpleVectorStore store) {
 			var file = File.createTempFile("vectorstore", ".json");
-			((SimpleVectorStore) this.vectorStore).save(file);
+			store.save(file);
 			logger.info("vector store contents written to {}", file.getAbsolutePath());
 		}
 

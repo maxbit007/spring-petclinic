@@ -18,6 +18,8 @@ package org.springframework.samples.petclinic.vet;
 import org.springframework.samples.petclinic.model.NamedEntity;
 
 import jakarta.persistence.Entity;
+
+import java.io.Serial;
 import jakarta.persistence.Table;
 
 /**
@@ -29,6 +31,7 @@ import jakarta.persistence.Table;
 @Table(name = "specialties")
 public class Specialty extends NamedEntity {
 
+	@Serial
 	private static final long serialVersionUID = 5551869401872945493L;
 
 }

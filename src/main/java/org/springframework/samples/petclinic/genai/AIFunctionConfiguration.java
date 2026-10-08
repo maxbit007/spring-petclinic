@@ -71,22 +71,22 @@ class AIFunctionConfiguration {
 }
 
 record AddPetRequest(Pet pet, Integer ownerId) {
-};
+}
 
 record OwnerRequest(Owner owner) {
-};
+}
 
 record OwnersResponse(List<Owner> owners) {
-};
+}
 
 record OwnerResponse(Owner owner) {
-};
+}
 
 record AddedPetResponse(Owner owner) {
-};
+}
 
 record VetResponse(List<String> vet) {
-};
+}
 
 record VetRequest(Vet vet) {
 
